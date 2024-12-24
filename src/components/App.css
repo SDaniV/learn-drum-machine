@@ -1,0 +1,113 @@
+body {
+  background-color: #8d8d8d;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+[type="range"] {
+  /* -webkit-appearance: none; */
+  margin: 12.5px 0;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.drum-pad {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: grey;
+  margin-top: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.inner-container {
+  outline: 5px solid orange;
+  position: relative;
+  width: 660px;
+  text-align: center;
+  background-color: #b3b3b3;
+}
+
+.inner-container .controls-container {
+  width: 240px;
+  height: 272px;
+  display: inline-block;
+  margin: 40px 20px 0px 10px;
+  vertical-align: top;
+}
+
+.inner-container .controls-container .control {
+  width: 100px;
+  margin: auto;
+}
+
+.inner-container .controls-container #display {
+  width: 200px;
+  background-color: gray;
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.inner-container .controls-container .control .select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner-container .controls-container .control .select .inner {
+  width: 23px;
+  height: 19px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.inner-container .logo {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.logo .inner-logo {
+  display: inline-block;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.inner-container .pad-bank {
+  width: 332px;
+  height: 272px;
+  display: inline-block;
+  margin: 20px;
+}
+
